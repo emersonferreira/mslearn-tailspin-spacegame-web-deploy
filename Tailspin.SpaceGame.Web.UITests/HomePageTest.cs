@@ -108,7 +108,7 @@ namespace UITests
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
             // Locate the link by its ID and then click the link.
-            wait.until(ClickElement(FindElement(By.Id(linkId))));
+            wait.Until(ClickElement(FindElement(By.Id(linkId))));
 
             // Locate the resulting modal.
             IWebElement modal = FindElement(By.Id(modalId));
